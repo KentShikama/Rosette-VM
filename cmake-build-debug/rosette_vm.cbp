@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="rosette_vm"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/kent/Documents/rosette-vm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/kent/Documents/rosette-vm/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kent/Documents/rosette-vm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/kent/Documents/rosette-vm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kent/Documents/rosette-vm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/kent/Documents/rosette-vm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/kent/Documents/rosette-vm/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kent/Documents/rosette-vm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/kent/Documents/rosette-vm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kent/Documents/rosette-vm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/kent/Documents/rosette-vm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/kent/Documents/rosette-vm/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kent/Documents/rosette-vm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/kent/Documents/rosette-vm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kent/Documents/rosette-vm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rosette_vm">
+				<Option output="/home/kent/Documents/rosette-vm/cmake-build-debug/rosette_vm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kent/Documents/rosette-vm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/kent/Documents/rosette-vm/cmake-build-debug/Makefile&quot;  VERBOSE=1 rosette_vm"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kent/Documents/rosette-vm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/kent/Documents/rosette-vm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kent/Documents/rosette-vm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rosette_vm/fast">
+				<Option output="/home/kent/Documents/rosette-vm/cmake-build-debug/rosette_vm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kent/Documents/rosette-vm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/kent/Documents/rosette-vm/cmake-build-debug/Makefile&quot;  VERBOSE=1 rosette_vm/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kent/Documents/rosette-vm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/kent/Documents/rosette-vm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kent/Documents/rosette-vm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Addr.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/BinaryOb.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Bits.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/BuiltinClass.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Code.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/CommandLine.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Compile.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Cstruct.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Ctxt.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Dynload.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Expr.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/ForeignFun.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Heap.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Interrupt.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Labels.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Location.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/MI.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Mbox.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Meta.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Method.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/ModuleInit.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Monitor.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Number.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Ob.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/ObQue.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/ObStk.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Opcode.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Operation.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Parser.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Pattern.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Prim.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Proc.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/PtrCollect.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/PtrQue.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Queue.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/RBLstream.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/RBLstring.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/RblAtom.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/RblStack.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Reader.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/ResizeAry.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/StreamUtils.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Table.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Timer.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Timestamp.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Tuple.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/Vm.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/assert.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/misc.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/osfcn.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/regexp.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/sys/bsd.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/sys/dec.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/sys/hppa.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/sys/linux.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/sys/ncr.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/sys/rosette.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/sys/sgi.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/sys/sun-os4.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/sys/sun3.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/sys/sun4.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/h/sys/sysv4.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/config/dec-osi.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/config/dec.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/config/hppa.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/config/ncr.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/config/sgi.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/config/sun3-osi.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/config/sun3.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/config/sun4-osi.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/config/sun4.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rblimisc/IMISC-01.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rblimisc/IMISC-02.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rblimisc/IMISC-03.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rblimisc/IMISC-04.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rblimisc/IMISC-05.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rblimisc/IMISC-06.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rblimisc/IMISC-07.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rblimisc/IMISC-08.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rblimisc/IMISC-09.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rblimisc/IMISC-10.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rblimisc/IMISC-11.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rblimisc/IMISC-12.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rblimisc/IMISC-13.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rblimisc/IMISC-ops.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rblimisc/IMISC-ops.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rblimisc/IMISC-stubs.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rblimisc/IMISC-types.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rblimisc/imisc.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rblimisc/imiscd.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rblimisc/ryinitiator.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rblimisc/ryinitiator.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rblimisc/ryresponder.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rblimisc/ryresponder.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rbllookup/LOOKUP-01.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rbllookup/LOOKUP-02.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rbllookup/LOOKUP-03.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rbllookup/LOOKUP-04.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rbllookup/LOOKUP-05.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rbllookup/LOOKUP-06.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rbllookup/LOOKUP-07.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rbllookup/LOOKUP-08.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rbllookup/LOOKUP-09.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rbllookup/PasswordLookup-ops.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rbllookup/PasswordLookup-ops.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rbllookup/PasswordLookup-stubs.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rbllookup/PasswordLookup-types.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rbllookup/lookup.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rbllookup/lookupd.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rbllookup/ryinitiator.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rbllookup/ryinitiator.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rbllookup/ryresponder.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rbllookup/ryresponder.h">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rbltsap/tsaplisten.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/isode/rbltsap/tsaprovider.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Actor.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/BaseSupp.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/BigBang.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/BinaryOb.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Code.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/CommandLine.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Compile.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Console.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Cstruct.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Ctxt.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Dump-world.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Dynl_hpux.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Dynl_sysv4.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Dynload.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Expr.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/ForeignFun.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Heap.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/InetSupp.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Interrupt.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/IsodeSupp.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Labels.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Location.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/MI.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Mbox.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Meta.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Method.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/ModuleInit.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Monitor.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/MotifSupp.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Number.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Ob.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/ObQue.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/ObStk.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Opcode.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Operation.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Parser.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Pattern.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Prim.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Proc.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/PtrCollect.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/PtrQue.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Queue.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/RBLstream.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/RBLstring.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/RblAtom.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/RblStack.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Reader.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/ResizeAry.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/SocketSupp.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/StreamUtils.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/StringStore.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Table.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Timer.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Timestamp.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Tuple.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/UnixSupp.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/Vm.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/ess-config.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/main.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/misc.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/our_nlist.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/rbl-rosy.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/regexp.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/rosette-config.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/rosh-config.cc">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/unexec.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/unexec1.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/unexelf.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/unexhp9k800.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/src/unexmips.c">
+			<Option target="rosette_vm"/>
+		</Unit>
+		<Unit filename="/home/kent/Documents/rosette-vm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

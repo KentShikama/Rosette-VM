@@ -42,4 +42,12 @@
 (load 'async-repl	'silent)
 (load 'dyn-load		'silent)
 (load 'apropos		'silent)
+(load 'space 'silent)
 
+
+;;; TODO: Handle namespaces
+(defProc (inject-now channel)
+    (let [[now (now)]]
+        (produce t channel **wildcard** now)
+    )
+)

@@ -1,0 +1,3 @@
+/home/kent/Documents/rosette-vm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/kent/Documents/rosette-vm/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/kent/Documents/rosette-vm/cmake-build-debug/CMakeFiles/Rosette.dir

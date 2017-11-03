@@ -1,0 +1,814 @@
+litvec:
+   0:	{Proc}
+   1:	{Template}
+   2:	{Template}
+   3:	':exit-repl
+   4:	'!!
+   5:	{Template}
+   6:	'*last-expr*
+   7:	{TblObject}
+   8:	{Actor}
+codevec:
+   0:	extend 1
+   1:	alloc 1
+   2:	sleep 0,rslt
+   4:	outstanding 12,1
+   6:	push/alloc 1
+   7:	xfer global[**CurrentPrompt**],arg[0]
+   9:	xfer global[display],trgt
+  11:	xmit/nxt 1,rslt
+  12:	outstanding 18,1
+  14:	push
+  15:	xfer global[flush],trgt
+  17:	xmit/nxt 0,rslt
+  18:	outstanding 26,1
+  20:	push/alloc 1
+  21:	xfer global[stdin],arg[0]
+  23:	xfer global[read-expr],trgt
+  25:	xmit/nxt 1,arg[0]
+  26:	nargs 1
+  27:	extend 2
+  28:	outstanding 35,1
+  30:	push/alloc 1
+  31:	xfer lex[0,0],arg[0]
+  32:	xfer global[read-error?],trgt
+  34:	xmit/nxt 1,rslt
+  35:	jf 38
+  36:	xfer lex[1,0],trgt
+  37:	xmit/nxt 0
+  38:	alloc 2
+  39:	xfer lex[0,0],arg[0]
+  40:	liti 3,arg[1]
+  41:	same? 2,rslt
+  43:	jf 47
+  44:	xfer global[kernel],trgt
+  46:	xmit/nxt 0
+  47:	outstanding 54,1
+  49:	push/alloc 1
+  50:	xfer lex[0,0],arg[0]
+  51:	xfer global[eof?],trgt
+  53:	xmit/nxt 1,rslt
+  54:	jf 65
+  55:	alloc 2
+  56:	outstanding 95,1
+  58:	push/alloc 2
+  59:	xfer global[stdin],arg[0]
+  61:	lit #f,arg[1]
+  62:	xfer global[c-async],trgt
+  64:	xmit/nxt 2,rslt
+  65:	alloc 2
+  66:	xfer lex[0,0],arg[0]
+  67:	liti 4,arg[1]
+  68:	same? 2,rslt
+  70:	jf 74
+  71:	xfer global[*last-expr*],arg[0]
+  73:	jmp 75
+  74:	xfer lex[0,0],arg[0]
+  75:	nargs 1
+  76:	extend 5
+  77:	fork 83
+  78:	alloc 1
+  79:	xfer lex[0,0],arg[0]
+  80:	xfer global[eval-and-print],trgt
+  82:	send/nxt 1
+  83:	alloc 5
+  84:	outstanding 102,1
+  86:	push/alloc 5
+  87:	liti 6,arg[0]
+  88:	xfer lex[0,0],arg[1]
+  89:	liti 7,arg[2]
+  90:	liti 8,arg[3]
+  91:	liti 8,arg[4]
+  92:	xfer global[addD],trgt
+  94:	xmit/nxt 5,rslt
+  95:	lit 0,arg[0]
+  96:	lit #niv,arg[1]
+  97:	io-catch 2,rslt
+ 100:	lit #niv,rslt
+ 101:	rtn/nxt
+ 102:	sleep 0,rslt
+ 104:	xfer global[repl],trgt
+ 106:	xmit/nxt 0
+litvec:
+   0:	{RequestExpr}
+   1:	'rholang37e4acbfe4e1
+   2:	'token
+   3:	'rholang23ccf0f14ffa
+   4:	'they
+   5:	'rholangb5379d93638f
+   6:	'rtn
+   7:	'rholang0000eb0e08e0
+   8:	'me
+   9:	100
+  10:	'produce
+  11:	't
+  12:	'**wildcard**
+  13:	'token_contract
+  14:	'consume
+  15:	'rholang96c842676ebc
+  16:	'rholangf779df924f42
+  17:	'rholanga4aef5a419b2
+  18:	'balance_of_2_rtn
+  19:	'rholang43c3dc1edcee
+  20:	'balance_of_1_rtn
+  21:	'rholang3cb2b3e22cbb
+  22:	'unused_rtn
+  23:	'get
+  24:	"balance_of"
+  25:	'they_balance
+  26:	'rholang61655fde5625
+  27:	'rholangc0622dcab981
+  28:	'print
+  29:	'display
+  30:	#\\n
+  31:	'run
+  32:	'compile
+  33:	'return_channel
+  34:	'total_supply
+  35:	'message_sender
+  36:	'rholang2828d20dcf0b
+  37:	'rholang700e4aa09836
+  38:	'rholang4d4ebd39a488
+  39:	'rholang4df9c2d845ec
+  40:	'rholang40238b1594dd
+  41:	'owner_channel
+  42:	'rholangf8ab2760e211
+  43:	'allowed_channel
+  44:	'rholang705d9fb735e8
+  45:	'balances_channel
+  46:	'rholangf6899d9b0b49
+  47:	'allowance
+  48:	'rholang811cf80cb888
+  49:	'balance_of
+  50:	'rholang9ed600220cfe
+  51:	'approve
+  52:	'rholang10eeea06c9b0
+  53:	'transfer
+  54:	'rholang6ae600f086ef
+  55:	'transfer_from
+  56:	'insertMultiple
+  57:	"transfer"
+  58:	"transfer_from"
+  59:	"approve"
+  60:	"balance_of"
+  61:	'owner
+  62:	'rholang52112707c7ba
+  63:	'rholang5664f89fc5d0
+  64:	'rholang17fbeddbad30
+  65:	'balances
+  66:	'rholang130603e5ef8c
+  67:	'rholang0931845d781f
+  68:	'getOrElse
+  69:	'rholang1aac73957e25
+  70:	'rholangdd706469a2fe
+  71:	'insert
+codevec:
+   0:	alloc 3
+   1:	liti 1,arg[0]
+   2:	quoteexpr-basic-new 1,arg[1]
+   5:	liti 2,arg[0]
+   6:	tupleexpr-basic-new 2,arg[0]
+   9:	tupleexpr-basic-new 1,arg[1]
+  12:	xfer global[LetExpr],arg[0]
+  14:	xfer global[new],trgt
+  16:	outstanding 1021,1
+  18:	push/alloc 2
+  19:	outstanding 1017,2
+  21:	push/alloc 4
+  22:	liti 3,arg[0]
+  23:	quoteexpr-basic-new 1,arg[1]
+  26:	liti 4,arg[0]
+  27:	tupleexpr-basic-new 2,arg[2]
+  30:	liti 5,arg[0]
+  31:	quoteexpr-basic-new 1,arg[1]
+  34:	liti 6,arg[0]
+  35:	tupleexpr-basic-new 2,arg[3]
+  38:	liti 7,arg[0]
+  39:	quoteexpr-basic-new 1,arg[1]
+  42:	liti 8,arg[0]
+  43:	tupleexpr-basic-new 2,arg[1]
+  46:	xfer arg[3],arg[0]
+  47:	tupleexpr-basic-new 3,arg[1]
+  50:	xfer global[LetExpr],arg[0]
+  52:	xfer global[new],trgt
+  54:	outstanding 928,1
+  56:	push/alloc 5
+  57:	liti 8,arg[0]
+  58:	liti 9,arg[1]
+  59:	liti 6,arg[2]
+  60:	tupleexpr-basic-new 3,arg[4]
+  63:	liti 10,arg[0]
+  64:	liti 11,arg[1]
+  65:	liti 2,arg[2]
+  66:	liti 12,arg[3]
+  67:	requestexpr-basic-new 5,arg[0]
+  70:	outstanding 924,1
+  72:	push/alloc 6
+  73:	liti 13,arg[0]
+  74:	quoteexpr-basic-new 1,arg[0]
+  77:	tupleexpr-basic-new 1,arg[4]
+  80:	liti 12,arg[0]
+  81:	tupleexpr-basic-new 1,arg[3]
+  84:	liti 6,arg[0]
+  85:	tupleexpr-basic-new 1,arg[2]
+  88:	liti 14,arg[0]
+  89:	liti 11,arg[1]
+  90:	lit #f,arg[5]
+  91:	requestexpr-basic-new 6,arg[5]
+  94:	liti 15,arg[0]
+  95:	tupleexpr-basic-new 1,arg[1]
+  98:	liti 16,rslt
+  99:	xfer rslt,arg[0]
+ 100:	tupleexpr-basic-new 1,arg[0]
+ 103:	tupleexpr-basic-new 2,arg[0]
+ 106:	xfer arg[5],arg[1]
+ 107:	tupleexpr-basic-new 2,arg[0]
+ 110:	tupleexpr-basic-new 1,arg[1]
+ 113:	xfer global[LetExpr],arg[0]
+ 115:	xfer global[new],trgt
+ 117:	outstanding 923,1
+ 119:	push/alloc 2
+ 120:	liti 15,arg[0]
+ 121:	tupleexpr-basic-new 1,arg[1]
+ 124:	outstanding 919,1
+ 126:	push/alloc 2
+ 127:	liti 13,arg[0]
+ 128:	tupleexpr-basic-new 1,arg[0]
+ 131:	tupleexpr-basic-new 1,arg[0]
+ 134:	outstanding 915,1
+ 136:	push/alloc 4
+ 137:	liti 17,rslt
+ 138:	xfer rslt,arg[0]
+ 139:	quoteexpr-basic-new 1,arg[1]
+ 142:	liti 18,rslt
+ 143:	xfer rslt,arg[0]
+ 144:	tupleexpr-basic-new 2,arg[2]
+ 147:	liti 19,rslt
+ 148:	xfer rslt,arg[0]
+ 149:	quoteexpr-basic-new 1,arg[1]
+ 152:	liti 20,rslt
+ 153:	xfer rslt,arg[0]
+ 154:	tupleexpr-basic-new 2,arg[3]
+ 157:	liti 21,rslt
+ 158:	xfer rslt,arg[0]
+ 159:	quoteexpr-basic-new 1,arg[1]
+ 162:	liti 22,rslt
+ 163:	xfer rslt,arg[0]
+ 164:	tupleexpr-basic-new 2,arg[1]
+ 167:	xfer arg[3],arg[0]
+ 168:	tupleexpr-basic-new 3,arg[1]
+ 171:	xfer global[LetExpr],arg[0]
+ 173:	xfer global[new],trgt
+ 175:	outstanding 914,1
+ 177:	push/alloc 5
+ 178:	liti 4,arg[0]
+ 179:	liti 18,rslt
+ 180:	xfer rslt,arg[1]
+ 181:	tupleexpr-basic-new 2,arg[4]
+ 184:	liti 23,rslt
+ 185:	xfer rslt,arg[0]
+ 186:	liti 13,arg[1]
+ 187:	liti 24,rslt
+ 188:	xfer rslt,arg[2]
+ 189:	requestexpr-basic-new 3,arg[2]
+ 192:	liti 10,arg[0]
+ 193:	liti 11,arg[1]
+ 194:	liti 12,arg[3]
+ 195:	requestexpr-basic-new 5,arg[0]
+ 198:	outstanding 910,1
+ 200:	push/alloc 6
+ 201:	liti 25,rslt
+ 202:	xfer rslt,arg[0]
+ 203:	quoteexpr-basic-new 1,arg[0]
+ 206:	tupleexpr-basic-new 1,arg[4]
+ 209:	liti 12,arg[0]
+ 210:	tupleexpr-basic-new 1,arg[3]
+ 213:	liti 18,rslt
+ 214:	xfer rslt,arg[0]
+ 215:	tupleexpr-basic-new 1,arg[2]
+ 218:	liti 14,arg[0]
+ 219:	liti 11,arg[1]
+ 220:	lit #f,arg[5]
+ 221:	requestexpr-basic-new 6,arg[5]
+ 224:	liti 26,rslt
+ 225:	xfer rslt,arg[0]
+ 226:	tupleexpr-basic-new 1,arg[1]
+ 229:	liti 27,rslt
+ 230:	xfer rslt,arg[0]
+ 231:	tupleexpr-basic-new 1,arg[0]
+ 234:	tupleexpr-basic-new 2,arg[0]
+ 237:	xfer arg[5],arg[1]
+ 238:	tupleexpr-basic-new 2,arg[0]
+ 241:	tupleexpr-basic-new 1,arg[5]
+ 244:	liti 28,rslt
+ 245:	xfer rslt,arg[0]
+ 246:	liti 25,rslt
+ 247:	xfer rslt,arg[1]
+ 248:	requestexpr-basic-new 2,arg[2]
+ 251:	liti 29,rslt
+ 252:	xfer rslt,arg[0]
+ 253:	liti 30,rslt
+ 254:	xfer rslt,arg[1]
+ 255:	requestexpr-basic-new 2,arg[1]
+ 258:	xfer arg[2],arg[0]
+ 259:	seqexpr-basic-new 2,arg[1]
+ 262:	liti 25,rslt
+ 263:	xfer rslt,arg[0]
+ 264:	tupleexpr-basic-new 1,arg[0]
+ 267:	tupleexpr-basic-new 1,arg[0]
+ 270:	procexpr-basic-new 2,arg[2]
+ 273:	liti 26,rslt
+ 274:	xfer rslt,arg[0]
+ 275:	tupleexpr-basic-new 1,arg[1]
+ 278:	xfer arg[2],arg[0]
+ 279:	requestexpr-basic-new 2,arg[2]
+ 282:	xfer arg[5],arg[1]
+ 283:	xfer global[LetExpr],arg[0]
+ 285:	xfer global[new],trgt
+ 287:	xmit 3,arg[1]
+ 288:	pop
+ 289:	pop
+ 290:	pop
+ 291:	pop
+ 292:	pop
+ 293:	pop
+ 294:	pop
+ 295:	pop
+ 296:	push/alloc 1
+ 297:	outstanding 1013,1
+ 299:	push/alloc 2
+ 300:	tupleexpr-basic-new 0,arg[0]
+ 303:	outstanding 1009,1
+ 305:	push/alloc 2
+ 306:	liti 31,rslt
+ 307:	xfer rslt,arg[0]
+ 308:	outstanding 1005,1
+ 310:	push/alloc 2
+ 311:	liti 32,rslt
+ 312:	xfer rslt,arg[0]
+ 313:	outstanding 1001,1
+ 315:	push/alloc 6
+ 316:	liti 33,rslt
+ 317:	xfer rslt,arg[0]
+ 318:	quoteexpr-basic-new 1,arg[2]
+ 321:	liti 34,rslt
+ 322:	xfer rslt,arg[0]
+ 323:	quoteexpr-basic-new 1,arg[1]
+ 326:	liti 35,rslt
+ 327:	xfer rslt,arg[0]
+ 328:	quoteexpr-basic-new 1,arg[0]
+ 331:	tupleexpr-basic-new 3,arg[0]
+ 334:	tupleexpr-basic-new 1,arg[4]
+ 337:	liti 12,arg[0]
+ 338:	tupleexpr-basic-new 1,arg[3]
+ 341:	liti 2,arg[0]
+ 342:	tupleexpr-basic-new 1,arg[2]
+ 345:	liti 14,arg[0]
+ 346:	liti 11,arg[1]
+ 347:	lit #t,arg[5]
+ 348:	requestexpr-basic-new 6,arg[5]
+ 351:	liti 36,rslt
+ 352:	xfer rslt,arg[0]
+ 353:	liti 37,rslt
+ 354:	xfer rslt,arg[1]
+ 355:	liti 38,rslt
+ 356:	xfer rslt,arg[2]
+ 357:	tupleexpr-basic-new 3,arg[0]
+ 360:	tupleexpr-basic-new 1,arg[1]
+ 363:	liti 39,rslt
+ 364:	xfer rslt,arg[0]
+ 365:	tupleexpr-basic-new 1,arg[0]
+ 368:	tupleexpr-basic-new 2,arg[0]
+ 371:	xfer arg[5],arg[1]
+ 372:	tupleexpr-basic-new 2,arg[0]
+ 375:	tupleexpr-basic-new 1,arg[1]
+ 378:	xfer global[LetExpr],arg[0]
+ 380:	xfer global[new],trgt
+ 382:	outstanding 1000,1
+ 384:	push/alloc 3
+ 385:	liti 36,rslt
+ 386:	xfer rslt,arg[0]
+ 387:	liti 37,rslt
+ 388:	xfer rslt,arg[1]
+ 389:	liti 38,rslt
+ 390:	xfer rslt,arg[2]
+ 391:	tupleexpr-basic-new 3,arg[1]
+ 394:	outstanding 996,1
+ 396:	push/alloc 3
+ 397:	liti 35,rslt
+ 398:	xfer rslt,arg[0]
+ 399:	liti 34,rslt
+ 400:	xfer rslt,arg[1]
+ 401:	liti 33,rslt
+ 402:	xfer rslt,arg[2]
+ 403:	tupleexpr-basic-new 3,arg[0]
+ 406:	tupleexpr-basic-new 1,arg[0]
+ 409:	outstanding 992,1
+ 411:	push/alloc 4
+ 412:	liti 40,rslt
+ 413:	xfer rslt,arg[0]
+ 414:	quoteexpr-basic-new 1,arg[1]
+ 417:	liti 41,rslt
+ 418:	xfer rslt,arg[0]
+ 419:	tupleexpr-basic-new 2,arg[2]
+ 422:	liti 42,rslt
+ 423:	xfer rslt,arg[0]
+ 424:	quoteexpr-basic-new 1,arg[1]
+ 427:	liti 43,rslt
+ 428:	xfer rslt,arg[0]
+ 429:	tupleexpr-basic-new 2,arg[3]
+ 432:	liti 44,rslt
+ 433:	xfer rslt,arg[0]
+ 434:	quoteexpr-basic-new 1,arg[1]
+ 437:	liti 45,rslt
+ 438:	xfer rslt,arg[0]
+ 439:	tupleexpr-basic-new 2,arg[1]
+ 442:	xfer arg[3],arg[0]
+ 443:	tupleexpr-basic-new 3,arg[1]
+ 446:	xfer global[LetExpr],arg[0]
+ 448:	xfer global[new],trgt
+ 450:	outstanding 991,1
+ 452:	push/alloc 2
+ 453:	outstanding 987,2
+ 455:	push/alloc 6
+ 456:	liti 46,rslt
+ 457:	xfer rslt,arg[0]
+ 458:	quoteexpr-basic-new 1,arg[1]
+ 461:	liti 47,rslt
+ 462:	xfer rslt,arg[0]
+ 463:	tupleexpr-basic-new 2,arg[4]
+ 466:	liti 48,rslt
+ 467:	xfer rslt,arg[0]
+ 468:	quoteexpr-basic-new 1,arg[1]
+ 471:	liti 49,rslt
+ 472:	xfer rslt,arg[0]
+ 473:	tupleexpr-basic-new 2,arg[3]
+ 476:	liti 50,rslt
+ 477:	xfer rslt,arg[0]
+ 478:	quoteexpr-basic-new 1,arg[1]
+ 481:	liti 51,rslt
+ 482:	xfer rslt,arg[0]
+ 483:	tupleexpr-basic-new 2,arg[2]
+ 486:	liti 52,rslt
+ 487:	xfer rslt,arg[0]
+ 488:	quoteexpr-basic-new 1,arg[1]
+ 491:	liti 53,rslt
+ 492:	xfer rslt,arg[0]
+ 493:	tupleexpr-basic-new 2,arg[5]
+ 496:	liti 54,rslt
+ 497:	xfer rslt,arg[0]
+ 498:	quoteexpr-basic-new 1,arg[1]
+ 501:	liti 55,rslt
+ 502:	xfer rslt,arg[0]
+ 503:	tupleexpr-basic-new 2,arg[1]
+ 506:	xfer arg[5],arg[0]
+ 507:	tupleexpr-basic-new 5,arg[1]
+ 510:	xfer global[LetExpr],arg[0]
+ 512:	xfer global[new],trgt
+ 514:	outstanding 966,1
+ 516:	push/alloc 2
+ 517:	outstanding 962,2
+ 519:	push/alloc 5
+ 520:	liti 10,arg[0]
+ 521:	liti 11,arg[1]
+ 522:	liti 33,rslt
+ 523:	xfer rslt,arg[2]
+ 524:	liti 12,arg[3]
+ 525:	outstanding 933,1
+ 527:	push/alloc 10
+ 528:	liti 56,rslt
+ 529:	xfer rslt,arg[0]
+ 530:	liti 57,rslt
+ 531:	xfer rslt,arg[2]
+ 532:	liti 53,rslt
+ 533:	xfer rslt,arg[3]
+ 534:	liti 58,rslt
+ 535:	xfer rslt,arg[4]
+ 536:	liti 55,rslt
+ 537:	xfer rslt,arg[5]
+ 538:	liti 59,rslt
+ 539:	xfer rslt,arg[6]
+ 540:	liti 51,rslt
+ 541:	xfer rslt,arg[7]
+ 542:	liti 60,rslt
+ 543:	xfer rslt,arg[8]
+ 544:	liti 49,rslt
+ 545:	xfer rslt,arg[9]
+ 546:	outstanding 929,1
+ 548:	push/alloc 1
+ 549:	xfer global[RblTable],arg[0]
+ 551:	xfer global[new],trgt
+ 553:	xmit 1,arg[1]
+ 554:	pop
+ 555:	pop
+ 556:	pop
+ 557:	push/alloc 1
+ 558:	outstanding 958,1
+ 560:	push/alloc 2
+ 561:	tupleexpr-basic-new 0,arg[0]
+ 564:	outstanding 954,1
+ 566:	push/alloc 2
+ 567:	liti 31,rslt
+ 568:	xfer rslt,arg[0]
+ 569:	outstanding 950,1
+ 571:	push/alloc 2
+ 572:	liti 32,rslt
+ 573:	xfer rslt,arg[0]
+ 574:	outstanding 946,1
+ 576:	push/alloc 6
+ 577:	liti 6,arg[0]
+ 578:	quoteexpr-basic-new 1,arg[1]
+ 581:	liti 61,rslt
+ 582:	xfer rslt,arg[0]
+ 583:	quoteexpr-basic-new 1,arg[0]
+ 586:	tupleexpr-basic-new 2,arg[0]
+ 589:	tupleexpr-basic-new 1,arg[4]
+ 592:	liti 12,arg[0]
+ 593:	tupleexpr-basic-new 1,arg[3]
+ 596:	liti 49,rslt
+ 597:	xfer rslt,arg[0]
+ 598:	tupleexpr-basic-new 1,arg[2]
+ 601:	liti 14,arg[0]
+ 602:	liti 11,arg[1]
+ 603:	lit #t,arg[5]
+ 604:	requestexpr-basic-new 6,arg[5]
+ 607:	liti 62,rslt
+ 608:	xfer rslt,arg[0]
+ 609:	liti 63,rslt
+ 610:	xfer rslt,arg[1]
+ 611:	tupleexpr-basic-new 2,arg[0]
+ 614:	tupleexpr-basic-new 1,arg[1]
+ 617:	liti 64,rslt
+ 618:	xfer rslt,arg[0]
+ 619:	tupleexpr-basic-new 1,arg[0]
+ 622:	tupleexpr-basic-new 2,arg[0]
+ 625:	xfer arg[5],arg[1]
+ 626:	tupleexpr-basic-new 2,arg[0]
+ 629:	tupleexpr-basic-new 1,arg[1]
+ 632:	xfer global[LetExpr],arg[0]
+ 634:	xfer global[new],trgt
+ 636:	outstanding 945,1
+ 638:	push/alloc 2
+ 639:	liti 62,rslt
+ 640:	xfer rslt,arg[0]
+ 641:	liti 63,rslt
+ 642:	xfer rslt,arg[1]
+ 643:	tupleexpr-basic-new 2,arg[1]
+ 646:	outstanding 941,1
+ 648:	push/alloc 2
+ 649:	liti 61,rslt
+ 650:	xfer rslt,arg[0]
+ 651:	liti 6,arg[1]
+ 652:	tupleexpr-basic-new 2,arg[0]
+ 655:	tupleexpr-basic-new 1,arg[0]
+ 658:	outstanding 937,1
+ 660:	push/alloc 7
+ 661:	liti 65,rslt
+ 662:	xfer rslt,arg[0]
+ 663:	quoteexpr-basic-new 1,arg[0]
+ 666:	tupleexpr-basic-new 1,arg[4]
+ 669:	liti 12,arg[0]
+ 670:	tupleexpr-basic-new 1,arg[3]
+ 673:	liti 45,rslt
+ 674:	xfer rslt,arg[0]
+ 675:	tupleexpr-basic-new 1,arg[2]
+ 678:	liti 14,arg[0]
+ 679:	liti 11,arg[1]
+ 680:	lit #f,arg[5]
+ 681:	requestexpr-basic-new 6,arg[5]
+ 684:	liti 66,rslt
+ 685:	xfer rslt,arg[0]
+ 686:	tupleexpr-basic-new 1,arg[1]
+ 689:	liti 67,rslt
+ 690:	xfer rslt,arg[0]
+ 691:	tupleexpr-basic-new 1,arg[0]
+ 694:	tupleexpr-basic-new 2,arg[0]
+ 697:	xfer arg[5],arg[1]
+ 698:	tupleexpr-basic-new 2,arg[0]
+ 701:	tupleexpr-basic-new 1,arg[6]
+ 704:	liti 68,rslt
+ 705:	xfer rslt,arg[0]
+ 706:	liti 65,rslt
+ 707:	xfer rslt,arg[1]
+ 708:	liti 61,rslt
+ 709:	xfer rslt,arg[2]
+ 710:	lit 0,arg[3]
+ 711:	requestexpr-basic-new 4,arg[4]
+ 714:	liti 10,arg[0]
+ 715:	liti 11,arg[1]
+ 716:	liti 6,arg[2]
+ 717:	liti 12,arg[3]
+ 718:	requestexpr-basic-new 5,arg[5]
+ 721:	liti 10,arg[0]
+ 722:	liti 11,arg[1]
+ 723:	liti 45,rslt
+ 724:	xfer rslt,arg[2]
+ 725:	liti 12,arg[3]
+ 726:	liti 65,rslt
+ 727:	xfer rslt,arg[4]
+ 728:	requestexpr-basic-new 5,arg[1]
+ 731:	xfer arg[5],arg[0]
+ 732:	blockexpr-basic-new 2,arg[1]
+ 735:	liti 65,rslt
+ 736:	xfer rslt,arg[0]
+ 737:	tupleexpr-basic-new 1,arg[0]
+ 740:	tupleexpr-basic-new 1,arg[0]
+ 743:	procexpr-basic-new 2,arg[5]
+ 746:	liti 66,rslt
+ 747:	xfer rslt,arg[0]
+ 748:	tupleexpr-basic-new 1,arg[1]
+ 751:	xfer arg[5],arg[0]
+ 752:	requestexpr-basic-new 2,arg[2]
+ 755:	xfer arg[6],arg[1]
+ 756:	xfer global[LetExpr],arg[0]
+ 758:	xfer global[new],trgt
+ 760:	xmit 3,arg[1]
+ 761:	pop
+ 762:	pop
+ 763:	pop
+ 764:	pop
+ 765:	pop
+ 766:	pop
+ 767:	pop
+ 768:	pop
+ 769:	pop
+ 770:	pop
+ 771:	push/alloc 2
+ 772:	outstanding 983,2
+ 774:	push/alloc 6
+ 775:	liti 65,rslt
+ 776:	xfer rslt,arg[0]
+ 777:	quoteexpr-basic-new 1,arg[0]
+ 780:	tupleexpr-basic-new 1,arg[4]
+ 783:	liti 12,arg[0]
+ 784:	tupleexpr-basic-new 1,arg[3]
+ 787:	liti 45,rslt
+ 788:	xfer rslt,arg[0]
+ 789:	tupleexpr-basic-new 1,arg[2]
+ 792:	liti 14,arg[0]
+ 793:	liti 11,arg[1]
+ 794:	lit #f,arg[5]
+ 795:	requestexpr-basic-new 6,arg[5]
+ 798:	liti 69,rslt
+ 799:	xfer rslt,arg[0]
+ 800:	tupleexpr-basic-new 1,arg[1]
+ 803:	liti 70,rslt
+ 804:	xfer rslt,arg[0]
+ 805:	tupleexpr-basic-new 1,arg[0]
+ 808:	tupleexpr-basic-new 2,arg[0]
+ 811:	xfer arg[5],arg[1]
+ 812:	tupleexpr-basic-new 2,arg[0]
+ 815:	tupleexpr-basic-new 1,arg[5]
+ 818:	liti 71,rslt
+ 819:	xfer rslt,arg[0]
+ 820:	liti 65,rslt
+ 821:	xfer rslt,arg[1]
+ 822:	liti 35,rslt
+ 823:	xfer rslt,arg[2]
+ 824:	liti 34,rslt
+ 825:	xfer rslt,arg[3]
+ 826:	requestexpr-basic-new 4,arg[4]
+ 829:	liti 10,arg[0]
+ 830:	liti 11,arg[1]
+ 831:	liti 45,rslt
+ 832:	xfer rslt,arg[2]
+ 833:	liti 12,arg[3]
+ 834:	requestexpr-basic-new 5,arg[1]
+ 837:	liti 65,rslt
+ 838:	xfer rslt,arg[0]
+ 839:	tupleexpr-basic-new 1,arg[0]
+ 842:	tupleexpr-basic-new 1,arg[0]
+ 845:	procexpr-basic-new 2,arg[4]
+ 848:	liti 69,rslt
+ 849:	xfer rslt,arg[0]
+ 850:	tupleexpr-basic-new 1,arg[1]
+ 853:	xfer arg[4],arg[0]
+ 854:	requestexpr-basic-new 2,arg[2]
+ 857:	xfer arg[5],arg[1]
+ 858:	xfer global[LetExpr],arg[0]
+ 860:	xfer global[new],trgt
+ 862:	xmit 3,arg[1]
+ 863:	pop
+ 864:	push/alloc 2
+ 865:	outstanding 979,2
+ 867:	push/alloc 5
+ 868:	liti 10,arg[0]
+ 869:	liti 11,arg[1]
+ 870:	liti 45,rslt
+ 871:	xfer rslt,arg[2]
+ 872:	liti 12,arg[3]
+ 873:	outstanding 967,1
+ 875:	push/alloc 1
+ 876:	xfer global[RblTable],arg[0]
+ 878:	xfer global[new],trgt
+ 880:	xmit 1,arg[4]
+ 881:	pop
+ 882:	pop
+ 883:	push/alloc 5
+ 884:	liti 10,arg[0]
+ 885:	liti 11,arg[1]
+ 886:	liti 41,rslt
+ 887:	xfer rslt,arg[2]
+ 888:	liti 12,arg[3]
+ 889:	liti 35,rslt
+ 890:	xfer rslt,arg[4]
+ 891:	requestexpr-basic-new 5,arg[1]
+ 894:	outstanding 975,1
+ 896:	push/alloc 5
+ 897:	liti 10,arg[0]
+ 898:	liti 11,arg[1]
+ 899:	liti 43,rslt
+ 900:	xfer rslt,arg[2]
+ 901:	liti 12,arg[3]
+ 902:	outstanding 971,1
+ 904:	push/alloc 1
+ 905:	xfer global[RblTable],arg[0]
+ 907:	xfer global[new],trgt
+ 909:	xmit/nxt 1,arg[4]
+ 910:	blockexpr-basic-new 2,rslt
+ 913:	rtn/nxt arg[2]
+ 914:	xmit/nxt 3,arg[1]
+ 915:	procexpr-basic-new 2,rslt
+ 918:	rtn/nxt arg[0]
+ 919:	requestexpr-basic-new 2,rslt
+ 922:	rtn/nxt arg[2]
+ 923:	xmit/nxt 3,arg[1]
+ 924:	blockexpr-basic-new 2,rslt
+ 927:	rtn/nxt arg[2]
+ 928:	xmit/nxt 3,arg[1]
+ 929:	requestexpr-basic-new 10,rslt
+ 932:	rtn/nxt arg[4]
+ 933:	requestexpr-basic-new 5,rslt
+ 936:	rtn/nxt arg[1]
+ 937:	procexpr-basic-new 2,rslt
+ 940:	rtn/nxt arg[0]
+ 941:	requestexpr-basic-new 2,rslt
+ 944:	rtn/nxt arg[2]
+ 945:	xmit/nxt 3,arg[1]
+ 946:	requestexpr-basic-new 2,rslt
+ 949:	rtn/nxt arg[1]
+ 950:	requestexpr-basic-new 2,rslt
+ 953:	rtn/nxt arg[1]
+ 954:	procexpr-basic-new 2,rslt
+ 957:	rtn/nxt arg[0]
+ 958:	requestexpr-basic-new 1,rslt
+ 961:	rtn/nxt arg[0]
+ 962:	blockexpr-basic-new 2,rslt
+ 965:	rtn/nxt arg[2]
+ 966:	xmit/nxt 3,arg[1]
+ 967:	requestexpr-basic-new 5,rslt
+ 970:	rtn/nxt arg[1]
+ 971:	requestexpr-basic-new 5,rslt
+ 974:	rtn/nxt arg[0]
+ 975:	blockexpr-basic-new 2,rslt
+ 978:	rtn/nxt arg[0]
+ 979:	blockexpr-basic-new 2,rslt
+ 982:	rtn/nxt arg[0]
+ 983:	blockexpr-basic-new 2,rslt
+ 986:	rtn/nxt arg[0]
+ 987:	blockexpr-basic-new 2,rslt
+ 990:	rtn/nxt arg[2]
+ 991:	xmit/nxt 3,arg[1]
+ 992:	procexpr-basic-new 2,rslt
+ 995:	rtn/nxt arg[0]
+ 996:	requestexpr-basic-new 2,rslt
+ 999:	rtn/nxt arg[2]
+1000:	xmit/nxt 3,arg[1]
+1001:	requestexpr-basic-new 2,rslt
+1004:	rtn/nxt arg[1]
+1005:	requestexpr-basic-new 2,rslt
+1008:	rtn/nxt arg[1]
+1009:	procexpr-basic-new 2,rslt
+1012:	rtn/nxt arg[0]
+1013:	requestexpr-basic-new 1,rslt
+1016:	rtn/nxt arg[0]
+1017:	blockexpr-basic-new 2,rslt
+1020:	rtn/nxt arg[2]
+1021:	xmit/nxt 3
+litvec:
+   0:	{Loc rslt}
+codevec:
+   0:	upcall-rtn rslt
+litvec:
+   0:	{RequestExpr}
+   1:	{Ctxt}
+   2:	{Istream}
+   3:	{Tuple}
+   4:	{Tuple}
+codevec:
+   0:	alloc 4
+   1:	liti 1,arg[1]
+   2:	liti 2,arg[2]
+   3:	liti 3,arg[3]
+   4:	xfer global[handle],trgt
+   6:	outstanding 15,1
+   8:	push/alloc 1
+   9:	liti 4,arg[0]
+  10:	tuple-head 1,arg[0]
+  12:	xfer global[handler],trgt
+  14:	xmit/nxt 1,arg[0]
+  15:	xmit/nxt 4
+litvec:
+   0:	{Loc rslt}
+codevec:
+   0:	upcall-rtn rslt

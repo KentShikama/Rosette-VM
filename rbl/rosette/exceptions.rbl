@@ -167,7 +167,7 @@
 		 (self))]
 	[hndlr (handler id)]]
     (seq (if (same? mon (self))
-	     (display "*** recursive exception... aborting\n")
+	     (seq (prim-display "CRASH COMING!") (display "*** recursive exception... aborting\n"))
 	     (seq (tbl-add ActiveErrorHandlers mon #niv)
 		  (run (compile
 			(RX 'handle

@@ -1,2 +1,2 @@
 all:
-	../../bin/boot-ess -boot boot.rbl
+	gdb ../../bin/boot-ess #-boot boot.rbl

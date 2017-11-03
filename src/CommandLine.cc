@@ -33,14 +33,14 @@
 
 #include "misc.h"
 
-unsigned	SurvivorSpaceSize	= 128 * 1024;
-unsigned	InfantSpaceSize		= 512 * 1024;
-unsigned	OldSpaceChunkSize	=  32 * 1024;
+unsigned	SurvivorSpaceSize	= 128 * 1024 * 256;
+unsigned	InfantSpaceSize		= 512 * 1024 * 256;
+unsigned	OldSpaceChunkSize	=  32 * 1024 * 256;
 
 #define DEFAULT "/usr/local/lib/rosette/lib"
 
 int	TenuringAge = 10;
-int	ParanoidAboutGC = 0;
+int	ParanoidAboutGC = 1;
 char*	DefaultBootDirectory = DEFAULT;
 char	BootDirectory[MAXPATHLEN] = DEFAULT;
 char	BootFile[MAXPATHLEN] = "";

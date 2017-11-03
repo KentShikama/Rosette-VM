@@ -24,10 +24,10 @@
 
 ARCH		= linux
 
-CPPFLAGS	= -g -I ../h -I ../h/sys -DARCH_INC=\"$(ARCH).h\" -m32
+CPPFLAGS	= -ggdb3 -I ../h -I ../h/sys -DARCH_INC=\"$(ARCH).h\" -m32
 
 #LDCC		= gcc -g $(W_STATIC) -DGCC27X -lm
-LDCC		= g++ -g $(W_STATIC) -DGCC27X -lm -m32
+LDCC		= g++ -ggdb3 $(W_STATIC) -DGCC27X -lm -m32
 
 OBJS		= Actor.o RblAtom.o BigBang.o BinaryOb.o Code.o CommandLine.o \
 		Compile.o Cstruct.o ForeignFun.o Ctxt.o Dynload.o Dump-world.o \
